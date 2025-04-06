@@ -34,7 +34,7 @@ def handle_message(event):
             reply = "❗請使用正確格式：/違規 [地址] [違規類型] [描述]"
         else:
             address, violation_type, description = parts[1], parts[2], parts[3]
-            append_violation(address, violation_type, description)
+            append_violation_record(address, violation_type, description)
             reply = (f"📌 違規通報已記錄：\n"
                      f"🏠 位置：{address}\n"
                      f"🚫 類型：{violation_type}\n"
