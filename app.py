@@ -4,7 +4,7 @@ from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 import os
 from dotenv import load_dotenv
-from sheet_helper import append_violation  # 匯入 Google Sheet 模組
+from sheet_helper import append_violation_record  # 匯入 Google Sheet 模組
 
 app = Flask(__name__)
 load_dotenv()
